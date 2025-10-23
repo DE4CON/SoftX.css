@@ -16,7 +16,7 @@
   --glow-intensity: 0;
   --members-width: 240px;
   --guilds-width: 85px;
-  --server-icon-size: 46px;
+  --server-icon-size: 40px;
   --chat-avatar-size: 34px;
   --opacity: 0.85;
   --font: "Inter";
@@ -61,14 +61,14 @@ html, body, .app-2CXKsg {
   filter: none !important;
 }
 
-/* === Icons default (no rounding, no mask, no glow) === */
+/* === Icons clean (no rounding, no mask, no glow, fully aligned) === */
 .listItem-3SmSlK,
 .childWrapper-1j_1ub,
 .icon-3o6xvg,
 .folder-1hbNCn,
 .folderIconWrapper-226oVY,
 .expandedFolderBackground-3ZDF05 {
-  border-radius: 8 !important;
+  border-radius: 0 !important;
   mask: none !important;
   -webkit-mask: none !important;
   overflow: visible !important;
@@ -76,21 +76,21 @@ html, body, .app-2CXKsg {
   box-shadow: none !important;
   transform: none !important;
   filter: none !important;
-  margin: 0 auto !important;
+  display: flex !important;
   align-items: center !important;
   justify-content: center !important;
-  display: flex !important;
+  margin: 4px auto !important;
 }
 
-/* === Force correct centering and spacing for icons/folders === */
+/* === Perfect centering and sizing for icons/folders === */
 .listItem-3SmSlK {
   display: flex !important;
   justify-content: center !important;
   align-items: center !important;
-  margin: 4px 0 !important;
-  padding: 0 !important;
   width: var(--server-icon-size) !important;
   height: var(--server-icon-size) !important;
+  padding: 0 !important;
+  margin: 5px 0 !important;
 }
 
 .guilds-2JjMmN .scroller-3X7KbA {
